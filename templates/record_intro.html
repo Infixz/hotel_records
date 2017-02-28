@@ -1,0 +1,12 @@
+{% extends "basic.html" %}
+
+{% block header %}
+    <h1>{{ header_text }}</h1>
+{% end %}
+
+{% block body %}
+    <p>Intro：这个数据库是在2012年在QQ空间看到薛松柏分享的查询开房的链接中得到的。</p>
+    <p>其形式为2005w条开房记录的csv文件</p>
+    <p>本人将这些csv文件清洗并insertmany()进MySQL::hotel_records中</p>
+    {% module QueryBox() %}
+{% end %}

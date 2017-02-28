@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ page_title }}</title>
+        <link rel="stylesheet" type="text/css" href="{{ static_url("css/style.css") }}">
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <div id="header">
+                {% block header %}<h1>Cheng's Site</h1>{% end %}
+                </div>
+            </header>
+            <div id="main">
+                <div id="content">
+                    {% block body %}{% end %}
+                </div>
+            </div>
+            <footer>
+                <div id="footer"
+                {% block footer %}
+                    <p>
+        For more information please email me through
+        <a href="mailto:630572808@qq.com">630572808@qq.com</a>.
+                    </p>
+                {% end %}
+                </div>
+            </footer>
+        </div>
+        <!-- <script src="{{ static_url("js/script.js") }}"></script> -->
+    </body>
+</html>

@@ -1,0 +1,19 @@
+{% extends "basic.html" %}
+
+{% block header %}
+    <h1>{{ header_text }}</h1>
+{% end %}
+
+{% block body %}
+    <div id="result">
+        {% if result %}
+            <table>
+                {% module RecordField() %}
+                {% module RecordItem(result) %}
+            </table>
+        {% else %}
+            <h1>Check the parameters you type in, Plz</h1>
+        {% end %}
+    </div>
+    {% module QueryBox() %}
+{% end %}

@@ -1,0 +1,15 @@
+        {% for item in result %}
+        <div id="record-item">
+	    <tr>
+                <td>{{ item['Name'] }}</td>
+                <td>{{ item['Gender'] }}</td>
+                <td>{{ item['Birthday'] }}</td>
+                <td>{{ item['CtfType'] }}</td>
+                <td>{{ item['CtfId'] }}</td>
+                <td>{{ item['Mobile'] }}</td>
+                <td>{{ item['Email'] }}</td>
+                <td>{{ item['Country'] }}</td>
+                <td>{{ item['Address'] }}</td>
+            </tr>
+	</div>
+        {% end %}

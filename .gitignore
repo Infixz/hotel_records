@@ -1,3 +1,9 @@
 *.csv
 *.pyc
 grant
+venv
+venv/
+venv/*
+*.out
+local_settings.py
+
