@@ -24,6 +24,7 @@ def proc(addr, db, drop_headline=False):
 
 def proc_many(queue, db, drop_headline=False):
     for addr in queue:
+        print addr
         proc(addr, db, drop_headline)
 
 if __name__ == "__main__":
@@ -31,3 +32,4 @@ if __name__ == "__main__":
     queue = CSVlist.namelist()
     proc_many(queue, store, True)
     print 'end without exception'
+
